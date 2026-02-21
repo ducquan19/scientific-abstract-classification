@@ -1,0 +1,30 @@
+# Random seed for reproducibility
+random_state: 42
+
+# Data configuration
+data:
+    # External data from third-party sources.
+    external_dir: data/external
+    external_huggingface_dir: 'D:\test-cache\huggingface'
+    # external_huggingface_dir: data/external/huggingface
+
+    # Your own data
+    raw_dir: data/raw
+
+    # Intermediate data that has been transformed.
+    interim_dir: data/interim
+
+    # The final, canonical data sets for modeling.
+    processed_dir: data/processed
+
+    # The directory for storing experiment results and reports
+    experiments_dir: experiments
+
+# Sampling configuration
+sampling:
+    default_top_n: 1000
+    default_topics: ["astro-ph", "cond-mat", "cs", "math", "physics"]
+
+# Training configuration
+train:
+    test_size: 0.2
